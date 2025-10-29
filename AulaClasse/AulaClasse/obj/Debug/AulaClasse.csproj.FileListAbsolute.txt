@@ -1,0 +1,8 @@
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\bin\Debug\AulaClasse.exe.config
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\bin\Debug\AulaClasse.exe
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\bin\Debug\AulaClasse.pdb
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\obj\Debug\AulaClasse.csproj.AssemblyReference.cache
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\obj\Debug\AulaClasse.csproj.SuggestedBindingRedirects.cache
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\obj\Debug\AulaClasse.csproj.CoreCompileInputs.cache
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\obj\Debug\AulaClasse.exe
+C:\Users\DTG-2025\Desktop\POO\AulaClasse\AulaClasse\obj\Debug\AulaClasse.pdb
