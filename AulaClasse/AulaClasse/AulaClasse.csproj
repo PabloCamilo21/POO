@@ -44,8 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="AlunoSesi.cs" />
     <Compile Include="Cachorro.cs" />
+    <Compile Include="ContaBancaria.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="Jogador.cs" />
+    <Compile Include="Metodos.cs" />
+    <Compile Include="MetodosSenai.cs" />
+    <Compile Include="Moeda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
