@@ -20,7 +20,7 @@ namespace AulaClasse
 
             return soma;
         }
-        public void CalcularMedia()
+        public string CalcularMedia()
         {
             double somaNotas = SomarNotas(4, 2, 9, 10, 8);
 
@@ -28,15 +28,15 @@ namespace AulaClasse
 
             if (media > 7)
             {
-                Console.WriteLine("Aprovado");
+                return "Aprovado"; 
             }
             else if (media > 5)
             {
-                Console.WriteLine("Aluno de recuperação");
+                return "Aluno de recuperação";
             }
             else
             {
-                Console.WriteLine("Aluno reprovado");
+                return "Aluno reprovado";
             }
         }
     }

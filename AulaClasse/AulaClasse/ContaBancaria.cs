@@ -10,34 +10,34 @@ namespace AulaClasse
     {
         public string titular;
         public double saldo;
-
         public void Depositar(double deposito)
         {
-            Console.WriteLine("Digite seu saldo: ");
-            double saldo = Convert.ToDouble(Console.ReadLine());
-            this.saldo = saldo;
-            
-        }
-        public void Sacar(double saldo)
-        {
-            this.saldo = saldo;
-            if (saldo != 0)
+            if (saldo < 0 || deposito < 0)
             {
-                Console.WriteLine("Digite o valor que deseja sacar");
-                double saque = Convert.ToDouble(Console.ReadLine());
-
-
-                Console.WriteLine($"Sucesso, com o saque de {saque} reais, sua conta ficou com {saldo - saque}");
+                Console.WriteLine("Erro, você digitou um valor negativado");
             }
             else
             {
-                Console.WriteLine("Erro");
+                Console.WriteLine("Sucesso");
+                double saldoAtual = saldo - deposito;
+                Console.WriteLine("Com o depósito seu saldo ficou com: " + saldoAtual);
             }
         }
-        public void ExibirInformacoes(double saldo, string titular)
+        public void Sacar(double saque)
         {
-            this.saldo = saldo;
-            this.titular = titular;
+            if (saldo < 0 || saque < 0)
+            {
+                Console.WriteLine("Erro, você digitou um valor negativado");
+            }
+            else
+            {
+                Console.WriteLine("Sucesso");
+                double saldoAtual = saldo - saque;
+                Console.WriteLine("Com o saque seu saldo ficou com: " + saldoAtual);
+            }
+        }
+        public void ExibirInformacoes()
+        {
             Console.WriteLine($"O nome do titular é {titular} e seu saldo atual é {saldo}");
         }
     }

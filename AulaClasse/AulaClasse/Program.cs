@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -84,45 +85,72 @@ namespace AulaClasse
 
             //metodos.Subtrair(20);
 
+            // Atividade 01 
             MetodosSenai metodosSenai = new MetodosSenai();
-            metodosSenai.nome = "Pablo";
-            metodosSenai.sobrenome = "Camilo";
-            metodosSenai.endereco = "Rua Carlos ferrari";
-            metodosSenai.cidade = "Garça";
-            metodosSenai.estado = "São Paulo";
-            metodosSenai.pais = "Brasil";
+            //metodosSenai.nome = "Pablo";
+            //metodosSenai.sobrenome = "Camilo";
+            //metodosSenai.endereco = "Rua Carlos ferrari";
+            //metodosSenai.cidade = "Garça";
+            //metodosSenai.estado = "São Paulo";
+            //metodosSenai.pais = "Brasil";
 
-            Console.WriteLine("Nome: " + metodosSenai.nome);
-            Console.WriteLine("Sobrenome: " + metodosSenai.sobrenome);
-            Console.WriteLine("Endereço: " + metodosSenai.endereco);
-            Console.WriteLine("Cidade: " + metodosSenai.cidade);
-            Console.WriteLine("Estado: " + metodosSenai.estado);
-            Console.WriteLine("País: " + metodosSenai.pais);
+            //Console.WriteLine("Nome: " + metodosSenai.nome);
+            //Console.WriteLine("Sobrenome: " + metodosSenai.sobrenome);
+            //Console.WriteLine("Endereço: " + metodosSenai.endereco);
+            //Console.WriteLine("Cidade: " + metodosSenai.cidade);
+            //Console.WriteLine("Estado: " + metodosSenai.estado);
+            //Console.WriteLine("País: " + metodosSenai.pais);
 
+            // Atividade 02
             //metodosSenai.CalcularValorProduto();
 
+            // Atividade 03
             //metodosSenai.ValidarEscolaEstudante();
 
-            //metodosSenai.CalcularMediaAluno(5, 10, 5, 8);
+            // Atividade 04 
+            //metodosSenai.CalcularRetângulo();
+            //metodosSenai.CalcularCirculo();
+            //metodosSenai.CalcularQuadrado();
 
-            //metodosSenai.CalcularAumentoRemuneracao(2000);
+            // Atividade 05 
+            //metodosSenai.CadastrarProfessor();
+            //metodosSenai.CalcularMediaAluno(8, 9, 7, 10);
 
+            // Atividade 06
+            Console.Write("Digite seu salário: ");
+            double salario = Convert.ToDouble(Console.ReadLine());
+            metodosSenai.CalcularAumentoRemuneracao(salario);
+
+            // Atividade 07
             Moeda moeda = new Moeda();
-            moeda.ConverterRealParaDolar(2000);
+            moeda.ConverterDolarParaReal(2000);
 
+            // Atividade 08
             ContaBancaria conta = new ContaBancaria();
 
-            Console.WriteLine("Digite seu nome: ");
+            Console.Write("Digite seu nome: ");
             conta.titular = Console.ReadLine();
 
-            Console.WriteLine("Informe seu saldo Atual: ");
-            conta.saldo = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Digite seu saldo atual: ");
+            conta.saldo = Convert.ToDouble(Console.ReadLine());
+            while (conta.saldo > 0)
+            {
+                Console.Write("Digite o valor do saque: ");
+                double saque = Convert.ToDouble(Console.ReadLine());
+                conta.Sacar(saque);
 
-            Console.WriteLine($"Seu nome é {conta.titular} e seu saldo é {conta.saldo}");
+                Console.Write("Digite o valor do depósito: ");
+                double deposito = Convert.ToDouble(Console.ReadLine());
+                conta.Depositar(deposito);
 
-            Console.WriteLine("Digite a quantidade que deseja depositar: "); 
-            
+                conta.ExibirInformacoes();
+            }
 
+            // Atividade 09
+            AlunoSesi aluno = new AlunoSesi();
+            aluno.SomarNotas(7, 7, 7, 7, 7);
+            string notaFinal = aluno.CalcularMedia();
+            Console.WriteLine(notaFinal);
 
         }
     }

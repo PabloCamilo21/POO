@@ -52,7 +52,7 @@ namespace AulaClasse
             int idade  = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Digite sua escola: ");
-            string escola = Console.ReadLine().ToUpper();
+            string escola = Console.ReadLine().ToLower();
 
             Console.WriteLine($"Seu nome é {nome} \n Sua idade é {idade} \n Sua escola é {escola}");
 
