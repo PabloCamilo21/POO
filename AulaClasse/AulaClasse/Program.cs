@@ -86,72 +86,101 @@ namespace AulaClasse
             //metodos.Subtrair(20);
 
             // Atividade 01 
-            MetodosSenai metodosSenai = new MetodosSenai();
-            //metodosSenai.nome = "Pablo";
-            //metodosSenai.sobrenome = "Camilo";
-            //metodosSenai.endereco = "Rua Carlos ferrari";
-            //metodosSenai.cidade = "Garça";
-            //metodosSenai.estado = "São Paulo";
-            //metodosSenai.pais = "Brasil";
+            //MetodosSenai metodosSenai = new MetodosSenai();
+            ////metodosSenai.nome = "Pablo";
+            ////metodosSenai.sobrenome = "Camilo";
+            ////metodosSenai.endereco = "Rua Carlos ferrari";
+            ////metodosSenai.cidade = "Garça";
+            ////metodosSenai.estado = "São Paulo";
+            ////metodosSenai.pais = "Brasil";
 
-            //Console.WriteLine("Nome: " + metodosSenai.nome);
-            //Console.WriteLine("Sobrenome: " + metodosSenai.sobrenome);
-            //Console.WriteLine("Endereço: " + metodosSenai.endereco);
-            //Console.WriteLine("Cidade: " + metodosSenai.cidade);
-            //Console.WriteLine("Estado: " + metodosSenai.estado);
-            //Console.WriteLine("País: " + metodosSenai.pais);
+            ////Console.WriteLine("Nome: " + metodosSenai.nome);
+            ////Console.WriteLine("Sobrenome: " + metodosSenai.sobrenome);
+            ////Console.WriteLine("Endereço: " + metodosSenai.endereco);
+            ////Console.WriteLine("Cidade: " + metodosSenai.cidade);
+            ////Console.WriteLine("Estado: " + metodosSenai.estado);
+            ////Console.WriteLine("País: " + metodosSenai.pais);
 
-            // Atividade 02
-            //metodosSenai.CalcularValorProduto();
+            //// Atividade 02
+            ////metodosSenai.CalcularValorProduto();
 
-            // Atividade 03
-            //metodosSenai.ValidarEscolaEstudante();
+            //// Atividade 03
+            ////metodosSenai.ValidarEscolaEstudante();
 
-            // Atividade 04 
-            //metodosSenai.CalcularRetângulo();
-            //metodosSenai.CalcularCirculo();
-            //metodosSenai.CalcularQuadrado();
+            //// Atividade 04 
+            ////metodosSenai.CalcularRetângulo();
+            ////metodosSenai.CalcularCirculo();
+            ////metodosSenai.CalcularQuadrado();
 
-            // Atividade 05 
-            //metodosSenai.CadastrarProfessor();
-            //metodosSenai.CalcularMediaAluno(8, 9, 7, 10);
+            //// Atividade 05 
+            ////metodosSenai.CadastrarProfessor();
+            ////metodosSenai.CalcularMediaAluno(8, 9, 7, 10);
 
-            // Atividade 06
-            Console.Write("Digite seu salário: ");
-            double salario = Convert.ToDouble(Console.ReadLine());
-            metodosSenai.CalcularAumentoRemuneracao(salario);
+            //// Atividade 06
+            //Console.Write("Digite seu salário: ");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+            //metodosSenai.CalcularAumentoRemuneracao(salario);
 
-            // Atividade 07
-            Moeda moeda = new Moeda();
-            moeda.ConverterDolarParaReal(2000);
+            //// Atividade 07
+            //Moeda moeda = new Moeda();
+            //moeda.ConverterDolarParaReal(2000);
 
-            // Atividade 08
-            ContaBancaria conta = new ContaBancaria();
+            //// Atividade 08
+            //ContaBancaria conta = new ContaBancaria();
 
-            Console.Write("Digite seu nome: ");
-            conta.titular = Console.ReadLine();
+            //Console.Write("Digite seu nome: ");
+            //conta.Titular = Console.ReadLine();
 
-            Console.Write("Digite seu saldo atual: ");
-            conta.saldo = Convert.ToDouble(Console.ReadLine());
-            while (conta.saldo > 0)
-            {
-                Console.Write("Digite o valor do saque: ");
-                double saque = Convert.ToDouble(Console.ReadLine());
-                conta.Sacar(saque);
+            //Console.Write("Digite seu saldo atual: ");
+            //conta.Saldo = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Digite o valor do depósito: ");
-                double deposito = Convert.ToDouble(Console.ReadLine());
-                conta.Depositar(deposito);
+            //while (conta.Saldo < 0)
+            //{
+            //    Console.Write("Digite seu saldo atual: ");
+            //    conta.Saldo = Convert.ToDouble(Console.ReadLine());
+            //}
 
-                conta.ExibirInformacoes();
-            }
+            //Console.WriteLine("Digite o valor do seu depósito: ");
+            //double valor = Convert.ToDouble(Console.ReadLine());
+            //conta.Depositar(valor);
 
-            // Atividade 09
-            AlunoSesi aluno = new AlunoSesi();
-            aluno.SomarNotas(7, 7, 7, 7, 7);
-            string notaFinal = aluno.CalcularMedia();
-            Console.WriteLine(notaFinal);
+            //Console.WriteLine("Digite o valor do seu saque: ");
+            //double valorSaque = Convert.ToDouble(Console.ReadLine());
+            //conta.Sacar(valorSaque);
 
+            //// Atividade 09
+            //AlunoSesi aluno = new AlunoSesi();
+            //aluno.SomarNotas(7, 7, 7, 7, 7);
+            //string notaFinal = aluno.CalcularMedia();
+            //Console.WriteLine(notaFinal);
+
+            //Aluno2 aluno2 = new Aluno2();
+            //aluno2.Cpf = "0000";
+
+            //Console.WriteLine(aluno2.Cpf);
+            //Animal animal = new Animal();
+            
+            Pessoa pessoa = new Pessoa();
+            pessoa.Nome = "Pablo";
+            pessoa.Sobrenome = "Camilo";
+            pessoa.Idade = 17;
+            pessoa.Profissao = "Repositor";
+            Console.WriteLine($"Seu nome é {pessoa.Nome + pessoa.Sobrenome} , você tem {pessoa.Idade}, exerce o cargo de {pessoa.Profissao}");
+            PessoaFisica pessoaFisica = new PessoaFisica();
+
+            pessoaFisica.Profissao = "Professor";
+            Console.WriteLine(pessoaFisica.Profissao);
+
+            PessoaJuridica pj = new PessoaJuridica();
+            pj.CargaHoraria = 8;
+            Console.WriteLine("A carga horária é: " + pj.CargaHoraria);
+
+            pj.pagamentoDeRemuneracao = 2500;
+            pessoaFisica.remuneracao = 2500;
+            Console.WriteLine($"A pessoa física recebe {pessoaFisica.remuneracao} da pessoa júridica, que paga a ela {pj.pagamentoDeRemuneracao}");
+
+            pessoaFisica.idCarteiraDeTrabalho = 8675;
+            Console.WriteLine($"O id do {pessoa.Nome + pessoa.Sobrenome} é {pessoaFisica.idCarteiraDeTrabalho}");
         }
     }
 }

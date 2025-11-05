@@ -8,37 +8,35 @@ namespace AulaClasse
 {
     public class ContaBancaria
     {
-        public string titular;
-        public double saldo;
-        public void Depositar(double deposito)
+        public string Titular; 
+        public double Saldo;
+        public void Depositar(double valor)
         {
-            if (saldo < 0 || deposito < 0)
+            if (valor <= 0)
             {
                 Console.WriteLine("Erro, você digitou um valor negativado");
             }
             else
             {
-                Console.WriteLine("Sucesso");
-                double saldoAtual = saldo - deposito;
-                Console.WriteLine("Com o depósito seu saldo ficou com: " + saldoAtual);
+                this.Saldo += valor;
+                Console.WriteLine("Depósito realizado com sucesso");
             }
         }
-        public void Sacar(double saque)
+        public void Sacar(double valor)
         {
-            if (saldo < 0 || saque < 0)
+            if (valor <= 0 && valor > this.Saldo)
             {
-                Console.WriteLine("Erro, você digitou um valor negativado");
+                Console.WriteLine("Você está tentando sacar um valor inválido");
             }
             else
             {
-                Console.WriteLine("Sucesso");
-                double saldoAtual = saldo - saque;
-                Console.WriteLine("Com o saque seu saldo ficou com: " + saldoAtual);
+                this.Saldo -= valor;
+                Console.WriteLine("Saque realizado com sucesso");
             }
         }
         public void ExibirInformacoes()
         {
-            Console.WriteLine($"O nome do titular é {titular} e seu saldo atual é {saldo}");
+            Console.WriteLine($"O nome do titular é {this.Titular} e seu saldo atual é {this.Saldo}");
         }
     }
 }
