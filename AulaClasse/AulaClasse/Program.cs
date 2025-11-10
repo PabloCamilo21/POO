@@ -159,28 +159,74 @@ namespace AulaClasse
 
             //Console.WriteLine(aluno2.Cpf);
             //Animal animal = new Animal();
-            
-            Pessoa pessoa = new Pessoa();
-            pessoa.Nome = "Pablo";
-            pessoa.Sobrenome = "Camilo";
-            pessoa.Idade = 17;
-            pessoa.Profissao = "Repositor";
-            Console.WriteLine($"Seu nome é {pessoa.Nome + pessoa.Sobrenome} , você tem {pessoa.Idade}, exerce o cargo de {pessoa.Profissao}");
-            PessoaFisica pessoaFisica = new PessoaFisica();
 
-            pessoaFisica.Profissao = "Professor";
-            Console.WriteLine(pessoaFisica.Profissao);
+            //Pessoa pessoa = new Pessoa();
+            //pessoa.Nome = "Pablo";
+            //pessoa.Sobrenome = "Camilo";
+            //pessoa.Idade = 17;
+            //pessoa.Profissao = "Repositor";
+            //Console.WriteLine($"Seu nome é {pessoa.Nome + pessoa.Sobrenome} , você tem {pessoa.Idade}, exerce o cargo de {pessoa.Profissao}");
+            //PessoaFisica pessoaFisica = new PessoaFisica();
 
-            PessoaJuridica pj = new PessoaJuridica();
-            pj.CargaHoraria = 8;
-            Console.WriteLine("A carga horária é: " + pj.CargaHoraria);
+            //pessoaFisica.Profissao = "Professor";
+            //Console.WriteLine(pessoaFisica.Profissao);
 
-            pj.pagamentoDeRemuneracao = 2500;
-            pessoaFisica.remuneracao = 2500;
-            Console.WriteLine($"A pessoa física recebe {pessoaFisica.remuneracao} da pessoa júridica, que paga a ela {pj.pagamentoDeRemuneracao}");
+            //PessoaJuridica pj = new PessoaJuridica();
+            //pj.CargaHoraria = 8;
+            //Console.WriteLine("A carga horária é: " + pj.CargaHoraria);
 
-            pessoaFisica.idCarteiraDeTrabalho = 8675;
-            Console.WriteLine($"O id do {pessoa.Nome + pessoa.Sobrenome} é {pessoaFisica.idCarteiraDeTrabalho}");
+            //pj.pagamentoDeRemuneracao = 2500;
+            //pessoaFisica.remuneracao = 2500;
+            //Console.WriteLine($"A pessoa física recebe {pessoaFisica.remuneracao} da pessoa júridica, que paga a ela {pj.pagamentoDeRemuneracao}");
+
+            //pessoaFisica.idCarteiraDeTrabalho = 8675;
+            //Console.WriteLine($"O id do {pessoa.Nome + pessoa.Sobrenome} é {pessoaFisica.idCarteiraDeTrabalho}");
+
+            //Estagiario estagiario = new Estagiario();
+
+            //Console.Write("Digite seu salário: ");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+
+            //estagiario.CalcularValeAlimentacao(salario);
+            //estagiario.CalcularImposto(salario);
+
+            //Gerente gerente = new Gerente();
+            //Console.Write("Digite o valor do seu salário para calcular o vale alimentação: ");
+            //double salario1 = Convert.ToDouble(Console.ReadLine());
+
+            //gerente.CalcularImposto(salario1);
+            //gerente.CalcularValeAlimentacao(salario1);
+
+            Pessoa1 pessoa = new Pessoa1();
+            Console.WriteLine("Digite seu nome: ");
+            pessoa.Nome = Console.ReadLine();
+
+            Console.Write("Digite seu cpf: ");
+            pessoa.cpf = Console.ReadLine();
+
+            Console.WriteLine(pessoa.cpf);
+
+            pessoa.ApresentarPessoa();
+
+            Empregado empregado = new Empregado();
+
+            Console.Write("Digite seu salario: ");
+            double salario = Convert.ToDouble(Console.ReadLine());
+
+            empregado.CalcularSalario(salario);
+
+            empregado.CalcularAlimentacao();
+
+            Gerente1 gerente = new Gerente1();
+
+            gerente.Nome = "Ricardo";
+            gerente.area = "Docente";
+            gerente.Idade = 32;
+            Console.WriteLine("Digite seu salário: ");
+            double salario1 = Convert.ToDouble(Console.ReadLine());
+
+            gerente.CalcularSalario(salario1); 
+            Console.WriteLine($"Seu nome é {gerente.Nome}, trabalha na área de {gerente.area} com {gerente.Idade} anos com salário de {salario} reais");
         }
     }
 }
