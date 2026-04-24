@@ -55,15 +55,9 @@ AulaClasse/
 ├── AulaClasse.sln        # Solução do projeto
 ├── AulaClasse/           # Projeto principal
 │   ├── Program.cs        # Ponto de entrada da aplicação
-│   ├── Classes/          # Classes do sistema
-│   │   ├── ClasseBase.cs
-│   │   ├── ClasseFilha.cs
-│   │
 │   └── obj/              # Arquivos gerados automaticamente
 │   └── bin/              # Arquivos compilados
 ```
-
-> ⚠️ Os nomes das classes podem variar, mas a estrutura segue essa organização lógica.
 
 ## 🎯 Objetivo
 
