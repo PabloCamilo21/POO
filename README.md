@@ -17,6 +17,8 @@ A abordagem utilizada simula entidades do mundo real através de **classes** e *
 - 🆕 **Instanciação de Objetos**
 - 🧬 **Herança**
   - Permite que uma classe herde características e comportamentos de outra, promovendo reutilização de código
+- 🔐 **Encapsulamento**
+- 🐍 **Polimorfismo**
 
 ## 💻 Tecnologias Utilizadas
 
@@ -75,8 +77,6 @@ Este projeto é voltado para aprendizado, contendo exemplos simples e didáticos
 
 ## 🚀 Próximos Passos
 
-- Encapsulamento
-- Polimorfismo
 - Interfaces
 - Projetos mais complexos com múltiplas camadas
 
