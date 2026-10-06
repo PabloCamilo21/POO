@@ -1,35 +1,35 @@
-# 📘 Programação Orientada a Objetos em C#
+# Programação Orientada a Objetos em C#
 
-Este repositório contém atividades desenvolvidas durante as aulas de **Programação Orientada a Objetos (POO)** utilizando a linguagem **C#**.
+Este repositório contém atividades desenvolvidas durante as aulas de Programação Orientada a Objetos (POO) utilizando a linguagem C#.
 
-## 🧠 Sobre o Projeto
+## Sobre o Projeto
 
 O projeto foi criado com o objetivo de aplicar na prática os principais conceitos da POO, organizando o código de forma estruturada e reutilizável.
 
-A abordagem utilizada simula entidades do mundo real através de **classes** e **objetos**, permitindo uma melhor organização e manutenção do código.
+A abordagem utilizada simula entidades do mundo real através de classes e objetos, permitindo uma melhor organização e manutenção do código.
 
-## 📚 Conceitos Aplicados
+## Conceitos Aplicados
 
-- 🧩 **Classes**
-- 📦 **Objetos**
-- 🔧 **Métodos**
-- 🏷️ **Atributos / Propriedades**
-- 🆕 **Instanciação de Objetos**
-- 🧬 **Herança**
+-  Classes
+-  Objetos
+-  Métodos
+-  Atributos / Propriedades
+-  Instanciação de Objetos
+-  Herança
   - Permite que uma classe herde características e comportamentos de outra, promovendo reutilização de código
-- 🔐 **Encapsulamento**
-- 🐍 **Polimorfismo**
+-  Encapsulamento
+-  Polimorfismo
 
 ## 💻 Tecnologias Utilizadas
 
 - C#
 - .NET (Console Application)
 
-## ▶️ Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 
-- Ter o **.NET SDK** instalado (versão 6 ou superior recomendada)
+- Ter o .NET SDK instalado (versão 6 ou superior recomendada)
   - Download: https://dotnet.microsoft.com/download
 
 ### Passo a passo
@@ -45,9 +45,9 @@ cd POO/AulaClasse/AulaClasse
 dotnet run
 ```
 
-> 💡 Também é possível abrir o projeto diretamente pelo **Visual Studio** e executar com `F5`.
+>  Também é possível abrir o projeto diretamente pelo **Visual Studio** e executar com `F5`.
 
-## 🗂️ Estrutura de Pastas
+##  Estrutura de Pastas
 
 ```bash
 AulaClasse/
@@ -59,21 +59,14 @@ AulaClasse/
 │   └── bin/              # Arquivos compilados
 ```
 
-## 🎯 Objetivo
+##  Objetivo
 
 - Compreender os fundamentos da Programação Orientada a Objetos
 - Aplicar conceitos como herança na prática
 - Melhorar a organização e reutilização de código
 
-## 📌 Observações
+##  Observações
 
 Este projeto é voltado para aprendizado, contendo exemplos simples e didáticos para fixação dos conceitos iniciais de POO.
 
-## 🚀 Próximos Passos
-
-- Interfaces
-- Projetos mais complexos com múltiplas camadas
-
----
-
-✍️ Desenvolvido durante as aulas no Senai
+Desenvolvido durante as aulas no Senai
