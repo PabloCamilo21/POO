@@ -20,7 +20,7 @@ A abordagem utilizada simula entidades do mundo real através de classes e objet
 -  Encapsulamento
 -  Polimorfismo
 
-## 💻 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - C#
 - .NET (Console Application)
